@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "monteserrat", sans-serif;
+}
+
+.services{
+    background-image: url(dashboard.PNG);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #ffff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #6e6e6e;
+    margin-top: 40px;
+    margin-left: 485px;
+}
+
+
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.service:hover{
+    background: #bdbbbb;
+}
+
+
+
+
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin: 25px;
+    
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: Century Gothic;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service i{
+    color: #ddd;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.service h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    color: #6e6e6e;
+}
+
+
+.service p{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 800px){
+.service{
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 500px){
+    .service{
+        width: 100%;
+    }
+    }
+
+   
