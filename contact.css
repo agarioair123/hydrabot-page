@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: url(dashboard.PNG) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 3.1%;
+    
+}
+
+.title{
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+}
+
+
+
+
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(41, 40, 40);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.13);
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+    width: 48%;
+
+}
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 212px;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+::-moz-input-placeholder{
+    color: #fff;
+}
+
+::-ms-input-placeholder{
+    color: #fff;
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    margin: 25px;
+    
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: Century Gothic;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .msg textarea{
+        height: 80px;
+    }
+
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+
+    
+}
+
